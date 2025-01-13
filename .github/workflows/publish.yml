@@ -1,0 +1,24 @@
+name: Publish Package
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org/'
+      - run: npm ci
+      - run: npm run build
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${d54028f90892afb109a250f75c36d089b28c3b14205ebe24fe137bad1d60668e
+36419b85a4d4a3ee3556c4c6c5af86252c46492772aea049e0a0fe1831b57471
+cb7c8a3091cbf765f3a0a95473215703b4e1319e88b13b728cb93eb986f31d16
+5145127325b083620c601dca6a8662d7495b3c9e5799c0553916f5d2646cab0c
+bca4defaaf9091bab11e4f96a0efc8477c9ec96fb61b3b940a192b80d4452728}

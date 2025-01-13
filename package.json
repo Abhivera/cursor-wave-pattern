@@ -32,6 +32,14 @@
     "rollup": "^3.0.0",
     "typescript": "^5.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abhivera/cursor-wave-pattern.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Abhivera/cursor-wave-pattern/issues"
+  },
+  "homepage": "https://github.com/Abhivera/cursor-wave-pattern#readme",
   "keywords": [
     "react",
     "cursor",
